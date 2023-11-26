@@ -1,0 +1,79 @@
+.tercero {
+   display: block;
+
+    justify-content: center;
+    
+    
+
+
+   @media (max-width: 1300px){
+
+        display: flex;
+        align-items: center;
+    
+   }
+}
+
+.tercero h2:hover {
+    color: var(--org); /* Cambia el color del texto al púrpura cuando pasas el cursor por encima */
+  }
+  
+  
+img{
+
+    max-width: 100%;
+    
+}
+
+.tercero a{
+  font-size: large;
+  font-family: 'Nunito';
+  color: floralwhite;
+}
+
+.tercero a i{
+  font-size: 40px;
+}
+  
+@media (max-width: 1800px){
+
+    .imagenes{
+        margin:100px;
+        background-color: #411409;
+        background-image: url(imagenes/45398.png);
+        border-radius: 15px;
+        
+        
+        
+        
+       }
+      
+      
+
+      .imagenes img{
+        width: 100%;
+      }
+    
+      .tercero h2{
+        width: 100%;
+        color: aliceblue;
+        font-family: 'Cinzel';
+        
+      }
+
+      .tercero h3{
+        color: rgb(128, 115, 115);
+        font-family: 'Nunito';
+      }
+      
+
+}  
+
+.enlace img{
+    max-width: 3rem;
+}
+
+
+
+
+  

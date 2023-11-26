@@ -1,0 +1,22 @@
+
+h2{
+    text-align: center;
+    color: rgb(63, 16, 16);
+    
+    
+}
+
+body{
+    background-image: url(imagenes/luci\ cielo.jpeg);
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-attachment: fixed; /* Fija la imagen en su posición, incluso cuando se desplaza la página */
+}
+
+
+.enlace {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,428 @@
+/*BARRA NAV RESPONSIVE */
+
+:root {
+  --blue : #12d2db;
+  --white : #fcf2fa;
+  --purple : #31060faa;
+  --org : #DE4321;
+  --purple-blc : #2c0505dd;
+  --shadow : 0 5px 10px 5px rgba(0, 0, 0, .3);
+  --navColor : linear-gradient(to right, rgba(104, 8, 24, 0.6)5%, rgba(19, 3, 18, 0.9));
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family:'Cinzel'; 
+  src: url(fuentes/Cinzel-VariableFont_wght.ttf);
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family:'Nunito'; 
+  src: url(fuentes/Nunito-VariableFont_wght.ttf);
+  font-weight: bold;
+  font-style: bold;
+}
+body {
+  font-family: 'Cinzel';
+}
+h1{
+  display: none;
+}
+nav {
+  position: relative;
+  background: var(--navColor);
+  box-shadow: var(--shadow);
+  height: 80px;
+  width: 100%;
+  display: flexbox;
+}
+
+label.logo {
+  color: var(--white);
+  font-size: 30px;
+  line-height: 80px;
+  padding: 0 80px;
+  letter-spacing: -1px;
+  font-weight: 800;
+  font-family:'Cinzel'  ;
+  transition: .2s ease;
+  text-shadow: 3px 5px 20px #230622aa;
+  
+  
+}
+
+nav ul {
+  float: right;
+  margin-right: 80px;
+  
+}
+
+nav ul li {
+  
+  display: inline-block;
+  line-height: 80px;
+}
+
+nav ul li a {
+  color: var(--white);
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 13px;
+  text-transform: lowercase;
+}
+
+nav ul li a:hover {
+  color: var(--org); /* Cambia el color del texto al púrpura cuando pasas el cursor por encima */
+  background: none; /* Asegura que el fondo se mantenga transparente */
+}
+
+
+a.active, a:hover {
+  background: var(--purple);
+  transition: .5s;
+}
+.checkbtn {
+  line-height: 80px;
+  font-size: 30px;
+  float: right;
+  cursor: pointer;
+  margin-right: 40px;
+  display: none;
+}
+.checkbtn i {
+  color: var(--white);
+  padding: 5px;
+  border-radius: 10px;
+  transition: .5s ease;
+}
+.checkbtn i:hover {
+  background: var(--purple);
+}
+#check {
+  display: none;
+}
+section {
+  height: 100vh;
+  background: url(images/image.jpg) no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+/* responsove code */
+
+
+/*LA SECTION DE LAS IMAGENES */
+/*ACOMODAR LAS IMAGENES */
+
+body{
+  background-color: #1d0502;
+  background-image: url(imagenes/ladrillo.jpg);
+
+}
+
+section{
+  max-width: 1300px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.principal{
+  
+  width: 100%;
+  height: 650px;
+  background-image: url(imagenes/lucifer-portada-1550237916.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items:end;
+  color:#ffffff;
+}
+
+
+
+h2{
+  font-family:'Nunito' ;
+  font-weight: bold;
+}
+
+/*EL SEGUNDO ARTICLE */
+
+.secundario{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2%;
+  
+}
+
+.secundario div{
+  padding: 2%;
+  text-align: center;
+}
+
+.secundario div img{
+  max-width: 100%;
+}
+
+
+
+/*FOOTER  */
+/*
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+}
+
+footer img{
+  max-width: 3rem;
+  width: 100%;
+  height: auto;
+  margin-right: .5%;
+}
+
+*/
+/*---------------------------- ----------------------*/
+
+/* PUREBA DE OTRO FOOTER*/
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2% 5%; /* Ajusta el padding según tus preferencias */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+
+.footer-content {
+  flex: 1;
+  margin-right: 2%; /* Ajusta el margen según tus preferencias */
+}
+
+.footer-content h3 {
+  font-size: 2em; /* Ajusta el tamaño de fuente según tus preferencias */
+  margin-bottom: 10px;
+}
+
+.footer-content p {
+  font-size: 1.6em; /* Ajusta el tamaño de fuente según tus preferencias */
+  margin-bottom: 5px;
+  font-family: 'Nunito';
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-content ul li {
+  margin-bottom: 5px;
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6em; /* Ajusta el tamaño de fuente según tus preferencias */
+  display: block;
+  font-family: 'Nunito';
+}
+
+.social-icon {
+  font-size: 3em; /* Ajusta el tamaño de fuente según tus preferencias */
+  margin-right: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #007bff;
+}
+
+
+
+
+/*------------------------------------------------- */
+
+@media (max-width: 960px) {
+  /* mobile mode */
+
+  label.logo {
+    font-size: 25px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 14px;
+  }
+  .checkbtn {
+    display: block;
+  }
+   ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: var(--purple-blc);
+    top: 80px;
+    left: -100%;
+    padding-top: 80px;
+    text-align: center;
+    transition: .5s ease;
+  }
+  nav ul li {
+    display: block;
+    margin: 30px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a.active, a:hover {
+    background: none;
+    color: var(--blue);
+    text-shadow: 0 10px 15px var(--blue);
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  body{
+    background-color: #1d0502;
+  }
+  
+  section{
+    max-width: 858px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .principal{
+    width: 100%;
+    height: 650px;
+    background-image: url(imagenes/lucifer-portada-1550237916.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    color:#ffffff;
+  }
+  
+ 
+  @font-face {
+    font-family:'Cinzel'; 
+    src: url(fuentes/Cinzel-VariableFont_wght.ttf);
+    font-weight: bold;
+    font-style: bold;
+  }
+  @font-face {
+    font-family:'Nunito'; 
+    src: url(fuentes/Nunito-VariableFont_wght.ttf);
+    font-weight: bold;
+    font-style: bold;
+  }
+  h2{
+    font-family:'Nunito' ;
+    font-weight: bold;
+  }
+  
+  /*EL SEGUNDO ARTICLE */
+  
+  .secundario{
+    margin-top: 1%;
+    display: block;
+    
+  }
+  .secundario div{
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+  }
+  .secundario div img{
+    margin-bottom: 1rem;
+    max-width: 100%;
+    
+  }
+   
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2% 5%; /* Ajusta el padding según tus preferencias */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas si es necesario */
+    margin-top: 110%;
+  }
+
+  .footer-content {
+    flex: 0 0 100%; /* Establece el ancho flexible y el crecimiento flexible */
+    margin-right: 2%; /* Ajusta el margen según tus preferencias */
+    
+  }
+
+  
+
+  .footer-content h3,
+  .footer-content p,
+  .footer-content ul,
+  .footer-content ul li a {
+    display: none; /* Oculta los elementos de texto y enlaces */
+  }
+
+  .footer-content .social-icon {
+    display: inline-block; /* Muestra los iconos en línea */
+    margin-right: 42%; /* Ajusta la distancia entre los iconos */
+  }
+
+  .footer-content .social-icon:last-child {
+    margin-right: 0; /* Elimina el margen del último icono */
+    
+}
+.footer-content .social-icon:first-child {
+  margin-right: 0; /* Elimina el margen del primer icono */
+  
+}
+
+} 
+  
+  /*FOOTER  */
+  
+
+
+  /* Añade el siguiente CSS para el menú desplegable */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #532c2c;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #A45F09 ;}
+
+.dropdown:hover .dropdown-content {display: block;}

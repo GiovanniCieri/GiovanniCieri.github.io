@@ -1,0 +1,140 @@
+/* 
+
+:root {
+    --blue : #12d2db;
+    --white : #fcf2fa;
+    --purple : #31060faa;
+    --purple-blc : #2c0505dd;
+    --shadow : 0 5px 10px 5px rgba(0, 0, 0, .3);
+    --navColor : linear-gradient(to right, rgba(104, 8, 24, 0.6)5%, rgba(19, 3, 18, 0.9));
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family:'Cinzel'; 
+    src: url(fuentes/Cinzel-VariableFont_wght.ttf);
+    font-weight: bold;
+    font-style: bold;
+  }
+
+  body {
+    font-family:'Cinzel'; 
+    margin: 0; 
+  }
+  
+  header {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    margin: 0 10px;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  */ 
+
+ 
+
+
+
+ 
+
+  
+  
+
+  /*-------------------------------------------- */
+
+
+  .container {
+    background-color: #fff;
+    background-image: url(imagenes/45398.png);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 300px auto;
+    
+    
+  }
+  
+  .container h2{
+    font-family: 'Cinzel';
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fcf2fa;
+  }
+  
+
+
+   /* -------------------------------------- */
+
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    
+    font-weight: bold;
+    color: #fcf2fa;
+    font-family: 'Nunito';
+  }
+
+
+  
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #4e0404;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    font-family: 'Nunito';
+  }
+  
+  button:hover {
+    background-color: rgb(211, 113, 22);
+    transition: background-color 0.3s ease; /* Agrega una transición suave */
+  }
+  
+  
+  button:focus {
+    outline: none;
+  }
+  
+ 
